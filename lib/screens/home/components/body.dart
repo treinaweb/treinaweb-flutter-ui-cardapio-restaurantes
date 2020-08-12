@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_cardapio_restaurante/screens/home/components/lista_categoria.dart';
+import 'package:ui_cardapio_restaurante/screens/home/components/lista_produtos.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -7,7 +8,8 @@ class Body extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        ListaCategoria()
+        ListaCategoria(),
+        ListaProdutos()
       ],
     );
   }

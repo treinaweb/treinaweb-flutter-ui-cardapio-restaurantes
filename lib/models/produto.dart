@@ -59,5 +59,5 @@ class Produto {
   ];
 
   String desc = "Um excelente hamburguer";
-  String caminho = "assets/images/burguer.png";
+  String caminho = "assets/images/burger.png";
 
