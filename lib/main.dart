@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_cardapio_restaurante/screens/detalhes/datalhes.dart';
 import 'package:ui_cardapio_restaurante/screens/home/home.dart';
 
 void main() => runApp(MeuApp());
@@ -13,7 +14,7 @@ class MeuApp extends StatelessWidget {
         primaryColor: Colors.blue,
         scaffoldBackgroundColor: Colors.white
       ),
-      home: HomeScreen(),
+      home: DetalhesScreen(),
     );
   }
 }
