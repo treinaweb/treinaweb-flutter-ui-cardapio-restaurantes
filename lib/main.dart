@@ -14,7 +14,7 @@ class MeuApp extends StatelessWidget {
         primaryColor: Colors.blue,
         scaffoldBackgroundColor: Colors.white
       ),
-      home: DetalhesScreen(),
+      home: HomeScreen(),
     );
   }
 }

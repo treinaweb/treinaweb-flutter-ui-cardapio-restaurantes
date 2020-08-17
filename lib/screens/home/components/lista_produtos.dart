@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_cardapio_restaurante/models/produto.dart';
+import 'package:ui_cardapio_restaurante/screens/detalhes/datalhes.dart';
 
 class ListaProdutos extends StatelessWidget {
   @override
@@ -15,19 +16,26 @@ class ListaProdutos extends StatelessWidget {
               crossAxisSpacing: 20,
               childAspectRatio: 0.75
             ),
-            itemBuilder: (context, index) => buildCartaoProduto(index)),
+            itemBuilder: (context, index) => buildCartaoProduto(index, context)),
       ),
     );
   }
 
-  Widget buildCartaoProduto(int index) {
+  Widget buildCartaoProduto(int index, BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: 10, right: 15, top: 20, bottom: 0),
       child: Material(
         elevation: 6.0,
         color: Colors.white,
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DetalhesScreen(produto: produtos[index],)
+              )
+            );
+          },
           child: Padding(
             padding: EdgeInsets.all(10),
             child: Column(

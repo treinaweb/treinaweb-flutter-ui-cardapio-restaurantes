@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_cardapio_restaurante/models/produto.dart';
+import 'package:ui_cardapio_restaurante/screens/detalhes/components/botao_comprar.dart';
 
 class InfoProduto extends StatelessWidget {
   Produto produto;
@@ -17,7 +18,9 @@ class InfoProduto extends StatelessWidget {
             style: TextStyle(
               height: 1.5
             ),
-          )
+          ),
+          SizedBox(height: 250,),
+          BotaoComprar()
         ],
       ),
     );
