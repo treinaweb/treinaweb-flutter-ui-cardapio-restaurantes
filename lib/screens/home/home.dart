@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_cardapio_restaurante/screens/home/components/app_bar.dart';
 import 'package:ui_cardapio_restaurante/screens/home/components/body.dart';
+import 'package:ui_cardapio_restaurante/screens/home/components/drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -8,6 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: appBar(context),
       body: Body(),
+      drawer: drawer(context),
     );
   }
 }
